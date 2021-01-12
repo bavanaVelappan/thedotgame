@@ -368,16 +368,13 @@ function isValidMovementChecksFinal() {
     for (var z = 0; z < proposedIntermediatePoints.length; z++) {
         // console.log(proposedIntermediatePoints.length);
         if (containsPoint(proposedIntermediatePoints[z])) {
-            //console.log("we have a problem" + proposedIntermediatePoints[z].x + " " + proposedIntermediatePoints[z].y)
+            //console.log(proposedIntermediatePoints[z].x + " " + proposedIntermediatePoints[z].y)
 
             return false;
         } else {
-            // var winner;
-            // winner = turn == 1 ? "Player 2 wins!" : "Player 1 Wins!";
-            // console.log(winner);
-            // console.log("that's ok!" + proposedIntermediatePoints[z].x + " " + proposedIntermediatePoints[z].y)
-            // var check = [proposedIntermediatePoints[z].x + 0.5,proposedIntermediatePoints[z].x + 1];
-            // console.log(check);
+            
+            // console.log( proposedIntermediatePoints[z].x + " " + proposedIntermediatePoints[z].y)
+            
         }
     }
     return true;
@@ -415,7 +412,7 @@ function startTimer(duration, display) {
             timer = duration;
         }
 
-    }, 200);
+    }, 1000);
 
 };
 
